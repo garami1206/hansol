@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+.mPanel,.mBoard,.mMenu04{display:none;}
+
+
+
+@media screen and (max-width:768px){
+    body{min-width:auto;}
+    .inner{width:auto;}
+    
+    /*모바일에서 안보임처리*/
+    .util,.gnb,.con04,.mainCon05 p,.fLogo,.fInfo,.mainCon02,.con03Menu04{display:none;}
+    
+    /*모바일에서 보임처리*/
+    .mPanel,.mBoard{display:block;}
+    
+    /*헤더*/
+    #header{margin:10px 20px;}
+    #header h1{
+        width:70px;
+        height:28px;
+        position:static;
+        background-size:400px;
+        background-position:0 0;
+    }
+    .mPanel{
+        width:16px;
+        height:15px;
+        background:url(../images/sp_com.png) no-repeat -227px -98px;
+        background-size:400px;
+        text-indent:-9999px;
+        position:absolute;
+        right:0;
+        top:6px;
+    }
+    .mPanel a{
+        display:block;
+    }
+    
+    
+    /*메인슬라이더*/
+    .mainSlider{
+        margin:0;
+        height:auto;
+        padding:40% 0;
+    }
+    .sliderTxt{
+        padding-top:0;
+        font-size:14px;
+    }
+    .sliderTxt p{font-size:11px;}
+    .arrow{
+        width:13px;
+        height:23px;
+        background-size:400px;
+        margin-top:-12px;
+    }
+    .prevBtn{
+        background-position:-64px -30px;
+        left:10px;
+    }
+    .nextBtn{
+        background-position:-79px -30px;
+        right:10px;
+    }
+    
+    /*mainCon01*/
+    .mainCon01{
+        padding:10px 0;
+    }
+    .mainCon01 ul{
+        display:block;
+        overflow:hidden;
+    }
+    .mainCon01 li{
+        width:33.33%;
+        margin:0;
+        padding:10px 0;
+    }
+    .mainCon01 li a span{
+        width:33px;
+        height:33px;
+        margin:0 auto;
+        background-size:400px;
+    }
+    .con01Icon01{background-position:0 -59px;}
+    .con01Icon02{background-position:-37px -59px;}
+    .con01Icon03{background-position:-74px -55px;}
+    .con01Icon04{background-position:-109px -59px;}
+    .con01Icon05{background-position:-145px -59px;}
+    .con01Icon06{background-position:-181px -59px;}
+    .mainCon01 li a p{margin-top:5px;}
+    
+    /*mainCon03*/
+    .mainCon03{margin-bottom: 0; padding: 10px; padding-bottom: 0;}
+    .con03{width:calc(50% - 5px); height: auto; margin-right: 10px; font-size: 14px; margin-bottom: 10px;}
+    .con03Menu01 a p{font-size: 0;}
+    .con03Menu02{margin-right: 0;}
+    .con03 h3{padding: 0; margin: 70px 0;}
+    .mMenu04{background: #A0948A; margin-right: 0;}
+    
+    
+    
+    /*모바일게시판*/
+    .mainCon04{}
+        .mBoard{padding: 0 10px; }
+        .mBoard dl{background: #F2F0ED; overflow: hidden; padding: 3% 0; margin-bottom: 10px;}
+        .mBoard dt{float: left; width: 20%; text-align: center; font-weight: bold; color: #2D5B79;}
+        .mBoard dd {float: left;width: 70%;white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+        .mBoard dd a{color: #333;}
+    
+    /*mainCon05*/
+    .mainCon05{padding: 30px 10px 20px; margin: 0;}
+    .mainCon05 li{width:calc(50% - 5px); margin-right: 10px; background-size: 100% 100%; height: auto; margin-bottom: 10px;}
+    .mainCon05 li:nth-child(2n){margin-right: 0;}
+    .mainCon05 li h3{padding-top: 0;font-size: 16px; }
+    .mainCon05 li a{padding-top: 70%;height: 80px; }
+    
+    /*푸터*/
+    .fTop{height: auto; line-height: normal; padding: 20px 0;}
+    .fMenu{float: none; text-align: center;}
+    .fMenu li{float: none; display: inline-block;}
+    .fMenu li:last-child:after{display: none;}
+    
+    .fTRight{float: none; text-align: center; margin-top: 10px;}
+    .fTRight ul{text-align: center;}
+    .fTRight li{padding: 0; margin: 0 3px; display: inline-block; width: 50%; vertical-align: middle; line-height: 45px; float: none;}
+    .fTRight.family{width: 30%; font-size: 13px;}
+    .fTRight span{font-size: 13px;}
+    .fBottom{padding: 20px 0;}
+    .copy{margin: 0;}
+}
